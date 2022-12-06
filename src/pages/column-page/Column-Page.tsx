@@ -5,8 +5,9 @@ import { ColumnPageContent } from "../../components";
 import data from "../../data/column-page.json";
 
 import "./Column-Page.scss";
-import { Button } from "../../components/layout";
+
 import { ColumnPageModel } from "../../models/ColumnPageModel";
+import { Button } from "../../components/layout";
 
 const ColumnPage = () => {
   const source: ColumnPageModel = data;

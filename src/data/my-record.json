@@ -3,17 +3,17 @@
     {
       "title": "BODY RECORD 1",
       "description": "自分のカラダの記録",
-      "image": "s01.jpg"
+      "image": "MyRecommend-1.jpg"
     },
     {
-      "title": "BODY RECORD",
-      "description": "自分のカラダの記録",
-      "image": "s01.jpg"
+      "title": "MY EXERCISE",
+      "description": "自分の運動の記録",
+      "image": "MyRecommend-2.jpg"
     },
     {
-      "title": "BODY RECORD",
-      "description": "自分のカラダの記録",
-      "image": "s01.jpg"
+      "title": "MY DIARY",
+      "description": "自分の日記",
+      "image": "MyRecommend-3.jpg"
     }
   ],
   "bodyRecordChart": {

@@ -13,7 +13,7 @@ function RecordList({ records }: propType) {
       <div className="record-list__content">
         {records &&
           records.map((record, index) => (
-            <div className="record-item" key={index}>
+            <div className="record-list__content__record-item" key={index}>
               <RecordItem record={record}></RecordItem>
             </div>
           ))}

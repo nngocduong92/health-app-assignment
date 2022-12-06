@@ -9,4 +9,10 @@
     grid-template-columns: auto auto auto;
     justify-content: space-between;
   }
+
+  .record-list__content__record-item {
+    width: 288px;
+    height: 288px;
+    border: 24px solid yellow;
+  }
 }

@@ -1,34 +1,61 @@
 @use "sass:map";
 @import "../../../core";
 .record {
-  height: 288px;
-  width: 288px;
-  background-color: map-get($map: $primary, $key: 300);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  width: 100%;
 
   .record__container {
-    height: 82%;
-    width: 82%;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .record__container__content {
-      text-align: center;
-      padding: 10px;
-      .record__container__content__title {
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      .record__container__content__img {
+        filter: grayscale(1);
+        object-fit: cover;
+        max-height: 288px;
+        position: absolute;
+        z-index: 0;
+      }
+      .record__container__content__container {
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.25);
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .record__container__content__container__title {
         color: map-get($map: $primary, $key: 300);
+        font-family: Inter;
         p {
           font-size: 25px;
           margin: 0;
+          height: 30px;
+          line-height: 30px;
+          letter-spacing: 0.13px;
         }
       }
 
-      .record__container__content__description {
-        display: inline-block;
+      .record__container__content__container__description {
+        @extend .u300;
+        display: flex;
         padding: 10px;
+        align-self: center;
         p {
           background-color: map-get($map: $primary, $key: 400);
           color: $light;

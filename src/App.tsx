@@ -3,6 +3,7 @@ import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ColumnPage, MyRecord, TopPage } from "./pages";
 import { Footer, Header } from "./components";
+import { ScrollBackToTop } from "./components/layout";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </div>
         <Footer />
       </div>
+      <ScrollBackToTop />
     </BrowserRouter>
   );
 }

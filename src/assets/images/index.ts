@@ -14,7 +14,10 @@ import column13 from "./column-9.jpg";
 import column14 from "./column-13.jpg";
 import knife from "./svg/knife.svg";
 import coffee from "./svg/coffee.svg";
-import image1 from "./s01.jpg";
+// import image1 from "./s01.jpg";
+import image1 from "./MyRecommend-1.jpg";
+import image2 from "./MyRecommend-2.jpg";
+import image3 from "./MyRecommend-3.jpg";
 
 export const ImageUrl = [
   column1,
@@ -32,6 +35,10 @@ export const ImageUrl = [
   column13,
   column14,
 ];
-export const ImageRecordUrl = [image1];
+export const ImageRecordUrl = [
+  image1,
+  image2,
+  image3
+];
 
 export const MealIcon = [knife, coffee];

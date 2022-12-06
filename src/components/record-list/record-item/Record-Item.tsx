@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Record-Item.scss";
 import { RecordModel } from "../../../models/MyRecordModel";
 import { ImageRecordUrl } from "../../../assets/images";
@@ -8,23 +8,30 @@ type propType = {
 };
 
 function RecordItem({ record }: propType) {
-  const imgIndex = Number.parseFloat(record.image.split("s")[1]);
-  let imgUrl = ImageRecordUrl.find((_, index) => index + 1 === imgIndex) || "";
+  const imgIndex = Number.parseFloat(record.image.split("-")[1]);
+  let imgUrl = ImageRecordUrl.find((_, index) => index + 1 === imgIndex);
   const image = {
     backgroundImage: "url(" + imgUrl + ")",
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
   };
 
   return (
     <div className="record">
-      <div style={image} className="record__container">
+      <div className="record__container">
         <div className="record__container__content">
-          <div className="record__container__content__title">
-            <p>{record.title}</p>
-          </div>
-          <div className="record__container__content__description">
-            <p>{record.description}</p>
+          <img
+            className="record__container__content__img"
+            src={imgUrl}
+            alt={record.image}
+          />
+          <div className="record__container__content__container">
+            <div className="record__container__content__container__title">
+              <p>{record.title}</p>
+            </div>
+            <div className="record__container__content__container__description">
+              <p>{record.description}</p>
+            </div>
           </div>
         </div>
       </div>
