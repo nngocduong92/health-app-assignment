@@ -1,0 +1,26 @@
+@use "sass:map";
+@import "../../core";
+
+.my-diary-list {
+  width: 100%;
+  height: auto;
+  .my-diary-list__header {
+    margin-bottom: 10px;
+    width: 100%;
+    .my-diary-list__header__title {
+      color: map-get($map: $dark, $key: 500);
+      font-size: 22px;
+    }
+  }
+  .my-diary-list__body {
+    width: 100%;
+    .my-diary-list__body__content {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto;
+      justify-content: space-between;
+      grid-column-gap: 12px;
+      grid-row-gap: 12px;
+    }
+  }
+}

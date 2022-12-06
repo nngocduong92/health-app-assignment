@@ -1,0 +1,17 @@
+.my-record__container {
+  justify-items: center;
+  position: relative;
+  margin: auto;
+  .my-record__main-content {
+    padding-top: 36px;
+
+    .my-record__main-content__item {
+      padding: 20px 0 20px 0;
+    }
+  }
+  .my-record--action {
+    text-align: center;
+    padding-bottom: 64px;
+    padding-top: 10px;
+  }
+}

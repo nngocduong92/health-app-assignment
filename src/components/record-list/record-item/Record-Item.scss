@@ -1,0 +1,42 @@
+@use "sass:map";
+@import "../../../core";
+.record {
+  height: 288px;
+  width: 288px;
+  background-color: map-get($map: $primary, $key: 300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .record__container {
+    height: 82%;
+    width: 82%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .record__container__content {
+      text-align: center;
+      padding: 10px;
+      .record__container__content__title {
+        color: map-get($map: $primary, $key: 300);
+        p {
+          font-size: 25px;
+          margin: 0;
+        }
+      }
+
+      .record__container__content__description {
+        display: inline-block;
+        padding: 10px;
+        p {
+          background-color: map-get($map: $primary, $key: 400);
+          color: $light;
+          font-size: 14px;
+          padding: 2px 15px 2px 15px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

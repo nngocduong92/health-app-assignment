@@ -1,0 +1,12 @@
+.record-list {
+  height: 300px;
+  width: 100%;
+
+  .record-list__content {
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+  }
+}

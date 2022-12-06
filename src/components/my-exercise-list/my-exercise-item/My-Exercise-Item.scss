@@ -1,0 +1,65 @@
+@use "sass:map";
+@import "../../../core";
+.my-exercise {
+  width: 420px;
+  height: 45px;
+  border-bottom: 2px solid map-get($map: $dark, $key: 400);
+  display: flex;
+  .my-exercise__dot {
+    height: 100%;
+    width: 20px;
+    text-align: center;
+    position: relative;
+    top: 2px;
+    .dot {
+      position: absolute;
+      background-color: $light;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      left: 50%;
+      top: 25%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .my-exercise__content {
+    height: 100%;
+    width: 400px;
+
+    .my-exercise__content__top {
+      height: 50%;
+      width: 100%;
+      display: inline-flex;
+
+      .my-exercise__content__top__title {
+        width: 70%;
+        height: 100%;
+        color: $light;
+        font-size: 15px;
+      }
+
+      .my-exercise__content__top__count-time {
+        width: 30%;
+        height: 100%;
+        text-align: right;
+        padding-right: 15px;
+        color: map-get($map: $primary, $key: 300);
+        font-size: 18px;
+      }
+    }
+    .my-exercise__content__bottom {
+      height: 50%;
+      width: 100%;
+      .my-exercise__content__bottom__count-calory {
+        color: map-get($map: $primary, $key: 300);
+        font-size: 14px;
+        font-family: Inter;
+      }
+    }
+  }
+}
+
+p {
+  margin: 0;
+}

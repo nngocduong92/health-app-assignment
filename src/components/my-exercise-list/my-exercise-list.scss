@@ -1,0 +1,52 @@
+@use "sass:map";
+@import "../../core";
+
+.my-exercise-list {
+  width: 100%;
+  height: 300px;
+  background-color: map-get($map: $dark, $key: 500);
+  .my-exercise-list__header {
+    height: 30px;
+    width: 100%;
+    color: $light;
+    display: inline-flex;
+    margin-bottom: 10px;
+    font-size: 22px;
+    .my-exercise-list__header__title {
+      margin: 10px 20px 10px 20px;
+    }
+    .my-exercise-list__header__date {
+      margin: 10px 20px 10px 20px;
+    }
+  }
+  .my-exercise-list__body {
+    height: 230px;
+    width: 100%;
+    margin-top: 10px;
+    .my-exercise-list__body__content {
+      height: 100%;
+      width: 98%;
+      overflow-y: scroll;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-row-gap: 5px;
+      justify-content: space-between;
+      .my-exercise-item {
+        margin: 0 5px 0 20px;
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px map-get($map: $dark, $key: 400);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: map-get($map: $primary, $key: 300);
+  border-radius: 10px;
+}

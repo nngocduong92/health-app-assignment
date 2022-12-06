@@ -13,18 +13,18 @@ function LineChart({ bodyRecordChart }: propType) {
         Body Record&emsp;{format(date, "yyyy.MM.dd")}
       </p>
       {bodyRecordChart && <EChart bodyRecordChart={bodyRecordChart}></EChart>}
-      <div className="line-chart__btn-function">
-        <div className="button">
-          <button className="btn">日</button>
+      <div className="line-chart__actions">
+        <div className="line-chart__actions__container">
+          <button className="line-chart__actions__container__btn">日</button>
         </div>
-        <div className="button">
-          <button className="btn">週</button>
+        <div className="line-chart__actions__container">
+          <button className="line-chart__actions__container__btn">週</button>
         </div>
-        <div className="button">
-          <button className="btn">月</button>
+        <div className="line-chart__actions__container">
+          <button className="line-chart__actions__container__btn">月</button>
         </div>
-        <div className="button">
-          <button className="btn active">年</button>
+        <div className="line-chart__actions__container">
+          <button className="line-chart__actions__container__btn active">年</button>
         </div>
       </div>
     </div>
