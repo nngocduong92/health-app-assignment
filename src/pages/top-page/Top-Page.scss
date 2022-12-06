@@ -1,0 +1,78 @@
+@use "sass:map";
+@import "../../core";
+
+.top-page__main {
+  justify-items: center;
+  position: relative;
+  .top-page__top-main {
+    margin-bottom: 20px;
+    display: flex;
+    .top-page__line-chart {
+      width: calc(100% - 540px);
+      background-color: map-get($map: $dark, $key: 500);
+    }
+    .top-page__top-main__progress {
+      width: 540px;
+      height: 316px;
+      background: url(../../assets/images/column-11.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      .top-page__top-main__progress__circle-container {
+        height: 181px;
+        width: 181px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $light;
+      }
+      img {
+        width: 540px;
+        height: 316px;
+        left: 0px;
+        top: 63px;
+        display: block;
+        object-fit: cover;
+      }
+    }
+  }
+  .top-page__item_main {
+    position: relative;
+    text-align: center;
+  }
+  .top-page__content_main {
+    max-width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+  .top-page--action {
+    text-align: center;
+    padding-bottom: 64px;
+    padding-top: 24px;
+  }
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: transparent;
+  }
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke: $light;
+  }
+
+  .circle-content {
+    flex-direction: row;
+    font-family: Inter;
+    .circle-sub-text {
+      font-size: 18px;
+    }
+
+    .circle-text {
+      font-size: 25px;
+      margin-left: 4px;
+    }
+  }
+}

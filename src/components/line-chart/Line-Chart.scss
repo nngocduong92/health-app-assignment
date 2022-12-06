@@ -1,0 +1,42 @@
+@use "sass:map";
+@import "../../core";
+
+.line-chart {
+  position: relative;
+  background-color: map-get($map: $dark, $key: 500);
+  .line-chart__title {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: $light;
+  }
+  .line-chart__btn-function {
+    position: absolute;
+    display: inline-flex;
+    top: 85%;
+    left: 30px;
+    z-index: 2;
+    .button {
+      width: 70px;
+      height: 30px;
+      margin-right: 3px;
+      .btn {
+        width: 90%;
+        height: 100%;
+        border: none;
+        border-radius: 15px;
+        color: map-get($map: $primary, $key: 300);
+        background-color: $light;
+        cursor: pointer;
+      }
+
+      .btn:focus {
+        outline: 0;
+      }
+
+      .active {
+        color: $light;
+        background-color: map-get($map: $primary, $key: 300);
+      }
+    }
+  }
+}

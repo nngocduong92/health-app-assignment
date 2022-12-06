@@ -3,7 +3,6 @@ import React from "react";
 import { ColumnPageTopMenu } from "../../components";
 import { ColumnPageContent } from "../../components";
 import data from "../../data/column-page.json";
-import { ImageUrl } from "../../assets/images";
 
 import "./Column-Page.scss";
 import { Button } from "../../components/layout";

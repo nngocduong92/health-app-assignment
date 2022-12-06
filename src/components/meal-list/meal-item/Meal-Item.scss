@@ -1,0 +1,36 @@
+@use "sass:map";
+@import "../../../core";
+.meal-item {
+  width: 134px;
+  aspect-ratio: 1 / 1.15;
+  margin: 50px;
+  background: linear-gradient(
+    45deg,
+    map-get($map: $primary, $key: 300) 30.26%,
+    map-get($map: $primary, $key: 400) 91.18%
+  );
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  .meal-item__content {
+    display: flex;
+    flex-direction: column;
+    .meal-item__content__icon {
+      .icon {
+        width: 56px;
+      }
+    }
+    .meal-item__content__title {
+      font-size: 20px;
+      line-height: 24px;
+      font-family: "Inter";
+      color: $light;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

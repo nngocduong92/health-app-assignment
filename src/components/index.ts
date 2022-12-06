@@ -5,5 +5,5 @@ export { default as ColumnPageTopMenu } from "./column-page-top-menu/Column-Page
 // export { default as MyExerciseList } from "./my-exercise-list/my-exercise-list";
 // export { default as MyDiaryList } from "./my-diary-list/my-diary-list";
 export { Header, Footer } from "./layout/index";
-// export { default as MealList } from "./meal-list/meal-item/Meal-Item";
-// export { default as ItemPage } from "./top-page-item/Top-Page-Item";
+export { default as MealList } from "./meal-list/meal-item/Meal-Item";
+export { default as ItemPage } from "./top-page-item/Top-Page-Item";
