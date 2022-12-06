@@ -1,0 +1,71 @@
+@use "sass:map";
+@import "../../../core";
+
+
+
+.header {
+  background: map-get($dark, 500);
+  height: 64px;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  .header__nav-main__logo {
+    height: 40px;
+  }
+  .header__nav-main {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+
+    .header__nav-main__nav-right {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      flex-grow: 1;
+      .header__nav-main__nav-right__list {
+        display: flex;
+        list-style-type: none;
+        margin: 0 16px 0 0;
+        .header__nav-main__nav-right__list__item {
+          padding: 8px 16px;
+          a {
+            @extend .u300;
+            text-decoration: none;
+            color: $light;
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 23px;
+            padding-right: 16px;
+            position: relative;
+            .header__nav-main__nav-right__list__item__title {
+              padding-left: 8px;
+              padding-bottom: 6px;
+            }
+            span {
+              position: relative;
+            }
+            .header__nav-main__nav-right__list__item__badge {
+              position: absolute;
+              top: -3px;
+              right: -6px;
+              border-radius: 100%;
+              background: map-get($primary, 500);
+              font-size: 9px;
+              line-height: 15px;
+              color: $light;
+              width: 16px;
+              height: 16px;
+              text-align: center;
+              padding-top: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

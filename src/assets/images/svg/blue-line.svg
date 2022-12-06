@@ -1,0 +1,23 @@
+<svg
+  width="960"
+  height="304"
+  viewBox="0 0 960 304"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <svg
+    width="853"
+    height="148"
+    viewBox="0 0 853 148"
+    x="55"
+    y="80"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.23303 2.32899L78.6403 14.8372L156.047 42.8934L233.455 48.1132L310.862 75.5169L388.269 78.1268L465.676 95.7434L543.084 99.6583L620.491 108.793L697.898 132.282L775.305 139.051L852.609 145.984"
+      stroke="#8FE9D0"
+      stroke-width="3"
+    />
+  </svg>
+</svg>

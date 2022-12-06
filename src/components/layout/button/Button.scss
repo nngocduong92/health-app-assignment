@@ -1,0 +1,20 @@
+@use "sass:map";
+@import "../../../core";
+.button {
+  background: linear-gradient(
+    32.95deg,
+    map-get($map: $primary, $key: 300) 8.75%,
+    map-get($map: $primary, $key: 400) 86.64%
+  );
+  height: 56px;
+  border: 0;
+  padding: 14px 4px 16px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  width: 296px;
+  color: $light;
+  border-radius: 6px;
+  cursor: pointer;
+}

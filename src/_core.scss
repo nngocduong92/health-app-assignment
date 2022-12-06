@@ -1,0 +1,109 @@
+@use "sass:map";
+
+$primary: (
+  300: #ffcc21,
+  400: #ff963c,
+  500: #ea6c00,
+);
+
+$secondary: #8fe9d0;
+
+$light: #ffffff;
+
+$dark: (
+  300: #707070,
+  400: #777777,
+  500: #414141,
+  600: #2e2e2e,
+  700: #000000,
+);
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url(./assets/fonts/NotoSansJP-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  src: url(./assets/fonts/NotoSansJP-Bold.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans JP Thin";
+  src: url(./assets/fonts/NotoSansJP-Thin.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans JP Light";
+  src: url(./assets/fonts/NotoSansJP-Light.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans JP Medium";
+  src: url(./assets/fonts/NotoSansJP-Medium.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterMedium";
+  src: url(./assets/fonts/Inter-Medium.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterBold";
+  src: url(./assets/fonts/Inter-Bold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterLight";
+  src: url(./assets/fonts/Inter-Light.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterThin";
+  src: url(./assets/fonts/Inter-Thin.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.u300 {
+  font-family: "Noto Sans JP Light", InterLight, sans-serif;
+  font-weight: 300;
+}
+
+.u400 {
+  font-family: "Noto Sans JP", Inter, sans-serif;
+  font-weight: normal;
+}
+
+.u700 {
+  font-family: "Noto Sans JP Bold", InterBold, sans-serif;
+  font-weight: 700;
+}
+
+.u500 {
+  font-family: "Noto Sans JP Medium", InterMedium, sans-serif;
+  font-weight: 500;
+}
