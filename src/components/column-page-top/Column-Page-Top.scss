@@ -1,0 +1,36 @@
+@use "sass:map";
+@import "../../core";
+
+.column-page-top__container {
+  background-color: map-get($map: $dark, $key: 700);
+  max-width: 216px;
+  max-height: 144px;
+  hr {
+    height: 0px;
+    width: 56px;
+    background-color: $light;
+  }
+}
+
+.column-page-top__inner {
+  padding: 24px 8px 22px 8px;
+  text-align: center;
+  justify-content: center;
+}
+
+.column-page-top__header {
+  color: map-get($map: $primary, $key: 400);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.11px;
+}
+
+.column-page-top__content {
+  color: $light;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+}

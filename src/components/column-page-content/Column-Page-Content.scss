@@ -1,0 +1,53 @@
+@use "sass:map";
+@import "../../core";
+
+.column-page-content {
+  max-width: 234px;
+  cursor: pointer;
+  .column-page-content__content {
+    position: relative;
+    max-width: inherit;
+    height: calc(100% - 72px);
+    img {
+      height: 100%;
+      width: 234px;
+    }
+    .column-page-content__content__date {
+      background-color: map-get($map: $primary, $key: 300);
+      color: $light;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      max-width: 144px;
+      max-height: 24px;
+      font-weight: 400;
+      font-size: 15px;
+      span {
+        padding: 8px 3px;
+      }
+    }
+  }
+  .column-page-content__header {
+    @extend .u300;
+    max-width: inherit;
+    height: 48px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.08px;
+    margin-top: 8px;
+  }
+
+  .column-page-content__tag {
+    @extend .u300;
+    max-width: inherit;
+    height: 24px;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.06px;
+    color: map-get($map: $primary, $key: 400);
+    span {
+      padding-right: 5px;
+    }
+  }
+}

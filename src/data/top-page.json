@@ -1,0 +1,74 @@
+{
+  "meals": [
+    { "icon": "knife", "title": "Morning" },
+    { "icon": "knife", "title": "Lunch" },
+    { "icon": "knife", "title": "Dinner" },
+    { "icon": "coffee", "title": "Snack" }
+  ],
+  "progressBar": {
+    "numberPercent": 75,
+    "date": "2022 05 21"
+  },
+  "bodyRecordChart": {
+    "titles": [
+      "6月",
+      "7月",
+      "8月",
+      "9月",
+      "10月",
+      "11月",
+      "12月",
+      "1月",
+      "2月",
+      "3月",
+      "4月",
+      "5月"
+    ],
+    "blueLineData": [120, 132, 101, 134, 90, 230, 210, 101, 134, 90, 230, 210],
+    "orangeLineData": [
+      130, 182, 191, 234, 290, 330, 310, 101, 134, 90, 230, 210
+    ]
+  },
+  "topPageItems": [
+    {
+      "imageUrl": "column-9",
+      "date": "2022 05 21",
+      "title": "Morning"
+    },
+    {
+      "imageUrl": "column-10",
+      "date": "2022 04 21",
+      "title": "Lunch"
+    },
+    {
+      "imageUrl": "column-11",
+      "date": "2022 05 22",
+      "title": "Dinner"
+    },
+    {
+      "imageUrl": "column-12",
+      "date": "2022 05 21",
+      "title": "Snack"
+    },
+    {
+      "imageUrl": "column-13",
+      "date": "2022 05 21",
+      "title": "Morning"
+    },
+    {
+      "imageUrl": "column-14",
+      "date": "2022 05 21",
+      "title": "Lunch"
+    },
+    {
+      "imageUrl": "column-11",
+      "date": "2022 05 21",
+      "title": "Dinner"
+    },
+    {
+      "imageUrl": "column-13",
+      "date": "2022 05 21",
+      "title": "Snack"
+    }
+  ]
+}
