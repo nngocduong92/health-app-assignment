@@ -35,3 +35,10 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
+#### App routing
+
+http://localhost:3000/ -> Top Page
+http://localhost:3000/column -> Column Page
+http://localhost:3000/my-record -> My record Page
